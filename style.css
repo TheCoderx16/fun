@@ -13,7 +13,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
+/* .container {
   background-color: #fff;
   padding: 2rem;
   border-radius: 1.25rem;
@@ -25,7 +25,31 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+} */
+
+.container {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2, #00c9ff, #92fe9d);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  min-height: 45vh;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  color: white;
 }
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 form {
   width: 100%;
