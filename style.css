@@ -8,8 +8,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+    animation: gradientShift 12s ease infinite;
+
   min-height: 100vh;
-  background: linear-gradient(to right, #87ceeb, #add8e6);
+  background: linear-gradient(to right, #58b9df, #7ddcfb);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -120,7 +122,7 @@ form select:focus {
 button {
   margin-top: 1rem;
   padding: 0.75rem;
-  background-color: #00796b;
+  background-color: #58a89f;
   color: white;
   font-size: 1rem;
   border: none;
@@ -129,7 +131,7 @@ button {
 }
 
 button:hover {
-  background-color: #004d40;
+  background-color: #488d82;
 }
 
 .msg {
