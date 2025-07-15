@@ -26,7 +26,7 @@ for(let select of dropdown){
     const updateFlag = (element) => {
         let currCode = element.value;
         let countryCode = countryList[currCode];
-        let newSrc = `"https://flagsapi.com/${countryCode}/flat/64.png"`;
+        let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
         let img = element.parentElement.querySelector("img");
         img.src = newSrc;
     };
